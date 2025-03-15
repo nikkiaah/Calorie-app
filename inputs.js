@@ -1,8 +1,15 @@
-// Variables
-let age = 15;
-let gender = "female";
-let weight = 125;
-let height = 62;
+//Test Variables
+//let age = 15;
+//let gender = "female";
+//let weight = 125;
+//let height = 62;
+
+//getting inputs from html elements
+const age = document.getElementById("age")
+let gender = document.getElementById("gender")
+const weight = document.getElementById("weight")
+const height = document.getElementById("height")
+
 
 // Amount of exercise affects the number of calories
 let FreqExercise = 1;
@@ -30,7 +37,7 @@ class Food {
     this.category = category;
     this.calories = calories;
 
-    // Adding to the FoodToday object
+    // Adding to the FoodToday dictionary
     FoodToday.Name.push(this.name);
     FoodToday.Category.push(this.category);
     FoodToday.Calories.push(this.calories);

@@ -38,3 +38,13 @@ class Food:
     self.name = name
     self.category = category
     self.calories = calories
+
+    #adding to dictionary in order to create a table later on / just having the whole data set
+    FoodToday['Name'].append(self.name)
+    FoodToday['Category'].append(self.category)
+    FoodToday['Calories'].append(self.calories)
+
+potato = Food("Potato", "Carbs", 600)
+print(FoodToday)
+df = pd.DataFrame.from_dict(FoodToday)
+print(df)
